@@ -38,6 +38,7 @@
 		75C35C921523F1DB00AD1F8C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75C35C911523F1DB00AD1F8C /* MainViewController.m */; };
 		75C35C941523F1DB00AD1F8C /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C35C931523F1DB00AD1F8C /* MainViewController.xib */; };
 		75C35C981523F1DB00AD1F8C /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = 75C35C971523F1DB00AD1F8C /* verify.sh */; };
+		75C35C9F1523F2A400AD1F8C /* www in Resources */ = {isa = PBXBuildFile; fileRef = 75C35C9E1523F2A400AD1F8C /* www */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,10 +56,10 @@
 		75C35C5A1523F1DB00AD1F8C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		75C35C5C1523F1DB00AD1F8C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		75C35C5E1523F1DB00AD1F8C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		75C35C621523F1DB00AD1F8C /* testApp-Info.plist */ = {isa = PBXFileReference; path = "testApp-Info.plist"; sourceTree = "<group>"; };
+		75C35C621523F1DB00AD1F8C /* testApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testApp-Info.plist"; sourceTree = "<group>"; };
 		75C35C641523F1DB00AD1F8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		75C35C661523F1DB00AD1F8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		75C35C681523F1DB00AD1F8C /* testApp-Prefix.pch */ = {isa = PBXFileReference; path = "testApp-Prefix.pch"; sourceTree = "<group>"; };
+		75C35C681523F1DB00AD1F8C /* testApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testApp-Prefix.pch"; sourceTree = "<group>"; };
 		75C35C691523F1DB00AD1F8C /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = /Users/Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<absolute>"; };
 		75C35C6E1523F1DB00AD1F8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		75C35C721523F1DB00AD1F8C /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -71,13 +72,14 @@
 		75C35C861523F1DB00AD1F8C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/splash/Default@2x.png"; sourceTree = "<group>"; };
 		75C35C881523F1DB00AD1F8C /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
 		75C35C8A1523F1DB00AD1F8C /* Cordova.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cordova.plist; sourceTree = "<group>"; };
-		75C35C8D1523F1DB00AD1F8C /* AppDelegate.h */ = {isa = PBXFileReference; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		75C35C8D1523F1DB00AD1F8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		75C35C8E1523F1DB00AD1F8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		75C35C901523F1DB00AD1F8C /* MainViewController.h */ = {isa = PBXFileReference; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		75C35C901523F1DB00AD1F8C /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
 		75C35C911523F1DB00AD1F8C /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
 		75C35C931523F1DB00AD1F8C /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
-		75C35C961523F1DB00AD1F8C /* README */ = {isa = PBXFileReference; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		75C35C961523F1DB00AD1F8C /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		75C35C971523F1DB00AD1F8C /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
+		75C35C9E1523F2A400AD1F8C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		75C35C341523F1DB00AD1F8C = {
 			isa = PBXGroup;
 			children = (
+				75C35C9E1523F2A400AD1F8C /* www */,
 				75C35C601523F1DB00AD1F8C /* testApp */,
 				75C35C451523F1DB00AD1F8C /* Frameworks */,
 				75C35C431523F1DB00AD1F8C /* Products */,
@@ -329,6 +332,7 @@
 				75C35C8B1523F1DB00AD1F8C /* Cordova.plist in Resources */,
 				75C35C941523F1DB00AD1F8C /* MainViewController.xib in Resources */,
 				75C35C981523F1DB00AD1F8C /* verify.sh in Resources */,
+				75C35C9F1523F2A400AD1F8C /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

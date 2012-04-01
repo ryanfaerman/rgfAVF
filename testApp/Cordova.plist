@@ -21,7 +21,11 @@
 	<key>OpenAllWhitelistURLsInWebView</key>
 	<false/>
 	<key>ExternalHosts</key>
-	<array/>
+	<array>
+		<string>*.cloudant.com</string>
+		<string>*.q36.in</string>
+		<string>*.jquery.com</string>
+	</array>
 	<key>Plugins</key>
 	<dict>
 		<key>org.apache.cordova.accelerometer</key>
