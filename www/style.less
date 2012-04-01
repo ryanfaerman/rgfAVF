@@ -1,0 +1,176 @@
+@linkColor:             #08c;
+@linkColorHover:        darken(@linkColor, 15);
+
+// Grays
+@black:                 #000;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+
+// Accent colors
+@blue:                  #049CDB;
+@blueDark:              #0064CD;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+@cream: rgb(230, 230, 230);
+@primaryButtonColor:    @blue;
+
+html * {
+  margin:0;
+  padding:0;
+}
+
+body {
+  
+  font: 100%/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #000;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust:none;
+  color: @gray;
+}
+
+.page {
+  position: relative;
+  z-index: 100;
+  font-size: 20px;
+  background: rgb(230, 230, 230);
+  
+}
+
+@media screen and (orientation:portrait) {
+  .page { 
+    height: 1024px;
+    width: 768px;
+  }
+}
+/* Landscape */
+@media screen and (orientation:landscape) {
+  .page { 
+    height: 768px;
+    width: 1024px;
+    
+  }
+}
+
+#indicators {
+  z-index: 1000;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  width: 130px;
+  margin-left: -50px;
+  list-style: none;
+  text-align: center;
+
+  li {
+    border: 1px solid @grayLight;
+    border-radius: 10px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    background: none;
+    margin-left: 5px;
+
+    -webkit-box-shadow: 0px 0px 1px 1px rgba(122, 122, 122, .3);
+
+    &.active {
+      background: @grayLight;
+    }
+  }
+}
+
+h1 {
+  font-family: EuphemiaUCAS;
+  color: @black;
+  font-size: 2.8em;
+  text-align: center;
+  
+  margin-right: 15px;
+  margin-bottom: 25px;
+
+  small {
+    color: @gray;
+  }
+}
+
+h2 {
+  font-family: EuphemiaUCAS;
+  color: @grayDark;
+  text-align: left;
+  font-size: 1.2em;
+  padding: 0 20px;
+  margin-bottom: 30px;
+  letter-spacing: .1em;
+  word-spacing: -5px;
+  -webkit-column-span: all;
+}
+
+
+.half-block {
+  height: 400px;
+  a {
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  p {
+    padding-right: 10px;
+  }
+}
+
+.placeholder {
+  background: @grayDark;
+  width: 378px;
+  height: 293px;
+}
+
+button {
+  border: 0;
+  border-radius: 5px;
+  color: #FFF;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.75;
+  background: @primaryButtonColor;
+  font-size: 1.5em;
+  padding: 14px 14px;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  margin-bottom: 50px;
+
+  &.android {
+    background: @purple;
+  }
+  
+}
+
+.center {
+  text-align: center;
+}
+
+.skim {
+  margin-top: 100px;
+}
+
+p {
+  margin: 20px 10px;
+}
+
+
+
+
+
