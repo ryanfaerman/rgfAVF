@@ -49,6 +49,7 @@ body {
     height: 1024px;
     width: 768px;
   }
+
 }
 /* Landscape */
 @media screen and (orientation:landscape) {
@@ -58,6 +59,9 @@ body {
     
   }
 }
+
+
+
 
 #indicators {
   z-index: 1000;
@@ -171,6 +175,24 @@ p {
 }
 
 
+@media screen and(orientation:portrait) and (max-width: 800px) {
+  body {
+    font-size: 25%;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
 
+
+  .placeholder {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1, h2, button {
+    font-size: 50%;
+  }
+}
 
 
