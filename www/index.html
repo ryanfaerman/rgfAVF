@@ -76,15 +76,23 @@
     </li>
     <li class="page">
       <h1>Research: Week 2</h1>
-      <p>1. As far as HTML accessibility is concerned, as long as the app is within phone gap, screen readers aren't really at play here or at least are less of a concern. The biggest thing I would so is to make sure there is enough contrast between the text and the background. Also, I would make sure to avoid overly small type and use clear typography.</p>
+      <section class="center">
+        <p>1. As far as HTML accessibility is concerned, as long as the app is within phone gap, screen readers aren't really at play here or at least are less of a concern. The biggest thing I would so is to make sure there is enough contrast between the text and the background. Also, I would make sure to avoid overly small type and use clear typography.</p>
 
-      <p>2. Some of the common frustrations are the lack or improper use of alt-tags for images. An alt-tag of  "image" is useless for someone with a screen reader. Also, menus can be bothersome for some, especially when there are nested menus. I would use something like a screen reader, combined with something like siri, to make a digital assistant that can browse the web with you.</p>
+        <p>2. Some of the common frustrations are the lack or improper use of alt-tags for images. An alt-tag of  "image" is useless for someone with a screen reader. Also, menus can be bothersome for some, especially when there are nested menus. I would use something like a screen reader, combined with something like siri, to make a digital assistant that can browse the web with you.</p>
 
-      <p>3. One device is the iPad. It has quite a few accessibility features, from high-contrast mode, to spoken menus. Some schools are using them to help with children that have Autism or other disabilities. </p>
+        <p>3. One device is the iPad. It has quite a few accessibility features, from high-contrast mode, to spoken menus. Some schools are using them to help with children that have Autism or other disabilities. </p>
 
-      <p>Another accessibility device is the little handicap buttons near many doors. These allow someone in a wheelchair to have a door opened for them when others are not around.</p>
+        <p>Another accessibility device is the little handicap buttons near many doors. These allow someone in a wheelchair to have a door opened for them when others are not around.</p>
 
-      <p>4. Apple's Siri is a big win for accessibility since it allows users to interact with the operating system with their own voice. Another application is for iOS called "Color ID Free" [http://itunes.apple.com/us/app/color-id-free/id402233600?mt=8] (even though the app isn't actually free) it can identify colors and help both the color blind, and those learning their colors.</p>
+        <p>4. Apple's Siri is a big win for accessibility since it allows users to interact with the operating system with their own voice. Another application is for iOS called "Color ID Free" [http://itunes.apple.com/us/app/color-id-free/id402233600?mt=8] (even though the app isn't actually free) it can identify colors and help both the color blind, and those learning their colors.</p>
+
+        <h1>Week 2 Video</h1>
+        <video controls>
+          <source src="http://f.cl.ly/items/2V2V261l0r1r1K0D1A3r/AVF%20Week%202.m4v" type="video/mp4" />
+          <soruce src="http://cl.ly/1U2k1k2P3U2v3w2L0B3n/AVF_Week_2.webm" type="video/webm" />
+        </video>
+      </section>
     </li>
     <li class="page">
       <h1>Developer Information</h1>
@@ -99,6 +107,7 @@
 
 <ul id="indicators">
   <li class="active">&nbsp;</li>
+  <li>&nbsp;</li>
   <li>&nbsp;</li>
   <li>&nbsp;</li>
   <li>&nbsp;</li>
@@ -125,7 +134,7 @@ function onDeviceReady() {
       url = 'http://maps.googleapis.com/maps/api/staticmap?markers=LAT,LONG&size=400x400&sensor=true&zoom=15';
       url = url.replace('LAT', position.coords.latitude);
       url = url.replace('LONG', position.coords.longitude);
-      navigator.notification.alert('Lat: '+position.coords.latitude + '\nLon: '+position.coords.longitude );
+      //navigator.notification.alert('Lat: '+position.coords.latitude + '\nLon: '+position.coords.longitude );
       document.getElementById('map').src = url;
     });
 
