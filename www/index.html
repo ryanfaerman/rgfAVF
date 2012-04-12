@@ -40,7 +40,7 @@
         <!-- <button>Geo-location</button><br />
         <button>Accelerometer</button><br />-->
 
-        <h2>Your Are Here:</h2>
+        <h2>Your Are Here (<span id="heading"></span> &deg; N):</h2>
         <img src="" id="map" />
       </section>
     </li>
@@ -53,7 +53,8 @@
       <section class="center skim">
         <button>Contacts</button><br />
         <button class="android">Network</button><br />
-        <button>Camera</button><br />
+        <button id="camera_button">Camera</button><br />
+        <img src="" id="camera_img" width="800" height="600" style="margin-bottom: 150px" border="0"/>
       </section>
     </li>
 
@@ -94,6 +95,26 @@
         </video>
       </section>
     </li>
+
+    <li class="page">
+      <h1>Research: Week 3</h1>
+      <section class="center">
+        <p>1.  According to several different sources, games, productivity, music, and social networking are top selling app categories in the United States.</p>
+
+        <p>2. In Japan, games, entertainment, books, productivity and music are fairly popular.
+        </p>
+        <p>3. In Great Britain, the popular categories are games, photo & video,  navigation, and social networking.
+        </p>
+        <p>4. Games and entertainment in general are very popular in all three regions. The type of game or entertainment is more similar between the english speaking nations than in Japan where the culture is more dissimilar.
+        </p>
+        <p>5. Android Version 2.3 seems the most popular worldwide followed by Android 2.2 and 2.1 the most recent versions and the oldest versions seem to have a very low percentage of market share. Newer features (post Android 2.3) can't really be used, since that operating system doesn't have enough market adoption. Using Android 2.3 or 2.2 as the latest version to target would be the safest solution.
+        </p>
+        <p>6. Both America and Great Britain have most lower data caps than Japan (a country that has had bandwidth consuming phones available for a much longer time). Generally, you'll want to use the least amount of bandwidth possible to be useable by the most number of people, especially in America where high-speed mobile internet is not always available.
+        </p>
+        <p>7. My suggestion would be to develop for the latest version of iOS first, either tablet or phone (or both). Then, if the client really wants an android version (which is going to take at lest 30% longer to develop than the iOS version), to work on an android version for phones. There isn't a large enough market for Android tablets to warrant the time and expense. As far as categories go, games and entertainment seem to be the highest grossing categories across all markets - but in the gaming category there is a large amount of competition which has to be factored into the decision.</p>      
+      </section>
+    </li>
+
     <li class="page">
       <h1>Developer Information</h1>
       <section class="center skim">
@@ -107,6 +128,7 @@
 
 <ul id="indicators">
   <li class="active">&nbsp;</li>
+  <li>&nbsp;</li>
   <li>&nbsp;</li>
   <li>&nbsp;</li>
   <li>&nbsp;</li>
@@ -142,6 +164,21 @@ function onDeviceReady() {
       document.getElementById('old_app').width=100;
       document.getElementById('old_app').height=100;
     }
+
+    navigator.compass.getCurrentHeading(function(heading){
+      document.getElementById('heading').innerHTML = "Facing "+ Math.floor(heading.magneticHeading)
+    });
+
+
+
+    document.getElementById('camera_button').addEventListener('touchstart', function(e){
+      navigator.camera.getPicture(
+        function(imageData){
+          document.getElementById('camera_img').src = 'data:img/jpg;base64,'+imageData;
+        }, function(msg){
+          navigator.notification.alert(msg);
+        })
+    }, false);
 }
 
 var slider = new Swipe(document.getElementById('slider'), {
